@@ -5,7 +5,7 @@ app.use(express.json());
 
 app.all("/message", (req, res) => {
   console.log("Connected to React");
-  res.send("Hello World!");
+  res.send("Hello Manish!");
 });
 
 const PORT = process.env.PORT || 8080;
