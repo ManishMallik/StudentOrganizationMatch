@@ -186,7 +186,7 @@ function Questions() {
     <div>
       <header className="App-header">
         <Paper className='form-background' style={paperStyle} elevation={3}>
-          <h1>Student Organization Match Card</h1>
+          <h1 className='title'>Student Organization Match Card</h1>
           <p className='fancyfont'>What is your name?</p>
           
           <TextField id="outlined-basic" label="Full Name" variant="outlined" className='fancyfont' style={{ width: '250px' }}/>

@@ -24,7 +24,7 @@ function Results() {
     return (
         <header className='App-header'>
             <Paper className='form-background' style={paperStyle} elevation={3}>
-                <h1>Organizations that we recommend based on your interests:</h1>
+                <h1 className='title'>Organizations that we recommend based on your interests:</h1>
                 <br/>
                 {/* <p>{receivedData}</p> */}
                 {data.map((option, index) => (
