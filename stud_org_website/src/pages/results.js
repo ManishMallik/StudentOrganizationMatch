@@ -24,12 +24,13 @@ function Results() {
     return (
         <header className='App-header'>
             <Paper className='form-background' style={paperStyle} elevation={3}>
-                <h1>Organizations that we recommend based on your interests:</h1>
-                <br/>
+                <h1 className='title'>Organizations that we recommend based on your interests:</h1>
+                {/* <br/> */}
                 {/* <p>{receivedData}</p> */}
                 {data.map((option, index) => (
                     <div>
-                        <h3>{index + 1}. {option.substring(0, option.indexOf(":"))}</h3>
+                        <div className='line'></div>
+                        <h3 className='title'>{index + 1}. {option.substring(0, option.indexOf(":"))}</h3>
                         <p className='fancyfont'>{option.substring(option.indexOf(":") + 2)}</p>
                     </div>
                 ))}

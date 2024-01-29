@@ -9,7 +9,7 @@ Our solution is to allow technology to do the matching process. Our primary goal
 - 3 Portions to this project:
   - Website that users can enter their answers
   - Database storing the organizations
-  - An AI model to analyze each organization's purpose
+  - A separate backend connected to OpenAI to analyze each organization's purpose and assign categories
 - Create a database that will store the list of organizations from the Excel sheet, the categories mentioned, and additional categories.
 - Create an application that will use AI to read the mission statements of each organization and analyze what majors, academic/industry fields, or religions could apply if applicable. These will be used to create additional categories to store within the database of our choice. Only us creators have access to running this model.
 - Create a website application for UTD students to access and answer the questions similar to those on Microsoft Forms.
@@ -19,14 +19,11 @@ Our solution is to allow technology to do the matching process. Our primary goal
 - Frontend: React.js (with React Bootstrap or Tailwind)
 - Backend (for the website):
   - Node.js
-  - Flask (Python)
 - Database:
-  - A MySQL database (OracleDB or anything else) or
-  - A NoSQL database (Firebase or MongoDB)
-- AI model (Separate from the website): Python
+  - Firebase (Cloud Firestore)
+- OpenAI API (Separate from the website): Python
 
 # Milestones
-- Finalizing on what database to use
 - Website:
   - Frontend:
     - Design the webpages
@@ -38,7 +35,7 @@ Our solution is to allow technology to do the matching process. Our primary goal
 - Database:
   - Create the structure of the database
   - Connect to both the AI Model and Website applications
-- AI Model:
+- Python Backend:
   - Read in the data
   - Preprocess the data
   - Set up a connection with OpenAI (preferrably GPT 3.5 Turbo)
