@@ -62,6 +62,11 @@
   /* font-weight: bold !important; */
 }
 
+.line {
+  border-bottom: 1px solid #000; /* Set the border properties as per your design */
+  padding-bottom: 5px; /* Optional: Add some spacing between the lines */
+}
+
 .round-button {
   border: none;
   border-radius: 10px;
